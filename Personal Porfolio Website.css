@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    background: url(portfolio\ img.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+    
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    margin-top: 2%;
+    right: -500px;
+    padding-left: 55%;
+
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategrey;
+    margin-top: 3%;
+    transition: .4s ease;
+}
+ul li a:hover{
+    color: rgba(230, 104, 59s);
+
+}
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+.info h1{
+    font-size: 60px;
+    color: rgb(36, 32, 30);
+}
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.info span{
+    color: rgb(230, 104, 59);
+}
+.info a{
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 26px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+    
+}
+.info a:hover{
+    background: rgb(59 ,174 ,209);
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+
+}
+.image img{
+    position: relative;
+    height: 25rem;
+    border: 1px;
+    border-radius: 220px;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    top: -150px;
+    transition: left 2s ease;
+}
+@media (max-width: 1025px) {
+    .image img{
+        top: -127px;
+    height: 18rem;
+    
+    left: 10rem;
+    }
+    .intro h1 {
+        font-size: 37px;
+    }
+    .main{
+        height: 50vh;
+    }
+}
+@media (max-width: 700px) {
+    .image img{
+        top: -136px;
+        height: 12rem;
+        left: 7rem;
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+    .info h3 {
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
+    .main{
+        height: 50vh;
+    }
+}
+@media (max-width: 500px) {
+    .image img{
+        top: -136px;
+        height: 8rem;
+        left: 7rem;
+    }
+    .intro h1 {
+        font-size: 30px;
+    }
+    .info h3 {
+        font-size: 9px;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
+    .main{
+        height: 50vh;
+    }
+}
+.main {
+    display: flex;
+}
+
+.About {}
+
+.About h1 {
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+}
+
+
+.Education h1 {
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+}
+
+.About p {
+    margin: 35px;
+    width: 45rem;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* text-align: justify; */
+    padding: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.icons i {
+    margin: 30px;
+    border-radius: 40px;
+}
+
+.icons i:hover {
+    background-color: #7fd7dc61;
+}
+
+.icons i h2,
+p {
+    font-style: normal;
+    margin: 10px;
+}
+
+.icons i.bi.bi-mortarboard-fill::before {
+    font-size: 50px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+}
+
+.main .info h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 1px 0px;
+    /* Gives that scrolling effect as the typing happens */
+
+    /* Adjust as needed */
+    animation: typing 2.5s steps(40, end) forwards,
+        blink-caret .75s step-end forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.name {
+    overflow: hidden;
+
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 2.5s steps(40, end) forwards,
+        blink-caret .75s step-end forwards;
+}
+
+.Internship h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Internship {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.Internship section {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.Internship-heading {
+    display: flex;
+    justify-content: center;
+    margin: 22px;
+}
+
+.Internship h2 {
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Education {
+    margin: 20px;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.Education:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icons i {
+    text-align: center;
+    width: 25rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    /* White background for icons */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    background-color: #f5f5f5;
+    /* Slightly off-white on hover */
+}
+
+.icons h2 {
+    color: #005086;
+    /* Dark blue for headings */
+
+}
+
+.Internship {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Internship-heading {
+    color: #005086;
+    /* Dark blue heading color */
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    /* Dark text color for section headings */
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+    /* Dark gray text color for paragraphs */
+}
+
+/* Hover effect for sections */
+section:hover {
+    background-color: #f0f0f0;
+    /* Slightly lighter gray on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .Internship {
+        padding: 15px;
+    }
+
+    .Internship-heading {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .Internship {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.mb-4 {
+
+    margin: 60px;
+    padding: 60px;
+}
+
+.mb-4 .row {
+    justify-content: center;
+}
+.bg-light{
+    background-color: white;
+}
